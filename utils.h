@@ -12,4 +12,15 @@ void Print(list<int> L)
     cout << endl;
 }
 
+int Sum(list<int> L)
+{
+    int s = 0;
+    for(list<int>::iterator it=L.begin(); it!=L.end(); ++i)
+        s += (*it);
+    return s;
+}
+
 #endif
+
+
+

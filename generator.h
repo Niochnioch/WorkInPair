@@ -3,13 +3,16 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <list>
 using namespace std;
 
-int Generator()
+list<int> Generator()
 {
+    list<int> L;
     srand(time(NULL));
     for(int i=0; i<10; ++i)
-        cout << rand()%100+1 << " ";
+        L.push_back(rand()%100+1);
+    return L;
 }
 
 #endif // RANDOM_H

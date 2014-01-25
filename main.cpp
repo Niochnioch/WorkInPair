@@ -1,8 +1,9 @@
 #include <iostream>
 #include "generator.h"
 
-int main(){
-	
+int main()
+{
+    Generator();
 
 	return 0;
 }

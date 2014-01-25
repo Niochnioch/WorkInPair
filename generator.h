@@ -1,13 +1,15 @@
 #ifndef GENERATOR_H
 #define GENERATOR_H
+#include <iostream>
 #include <cstdlib>
 #include <ctime>
+using namespace std;
 
 int Generator()
 {
     srand(time(NULL));
     for(int i=0; i<10; ++i)
-        cout << rand()%100+1;
+        cout << rand()%100+1 << " ";
 }
 
 #endif // RANDOM_H
